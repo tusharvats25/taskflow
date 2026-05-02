@@ -14,7 +14,6 @@ const PRIORITIES = ['low','medium','high','critical'];
 
 // ─── TASK FORM MODAL ──────────────────────────────────────────────────────────
 function TaskModal({ task, projectId, members, onClose, onSaved }) {
-  const { user } = useAuth();
   const [form, setForm] = useState({
     title: task?.title || '',
     description: task?.description || '',
